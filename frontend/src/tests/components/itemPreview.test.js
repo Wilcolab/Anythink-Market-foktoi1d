@@ -1,10 +1,9 @@
 import { create } from "react-test-renderer";
-import { mount } from "enzyme";
 import ItemPreview from "../components/ItemPreview";
 import { BrowserRouter as Router } from "react-router-dom";
 
 describe("ItemPreview component", () => {
-  it("Snapshot testing with no image, must return an image ", () => {
+  it("Snapshot testing with no image, must return a fallback image ", () => {
     const component = create(
       <Router>
         <ItemPreview item={{ image: "" }} />
