@@ -24,10 +24,7 @@ var UserSchema = new mongoose.Schema(
     },
     bio: String,
     image: String,
-    isVerified: {
-      type: Boolean,
-      default: false
-    },
+    isVerified: false,
     role: {
       type: String,
       enum: ["user", "admin"],
