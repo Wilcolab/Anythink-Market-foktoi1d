@@ -37,6 +37,7 @@ console.log(item);
     >
       <img
         alt="item"
+        id="item_verified_seller_item"
         src={item.isVerified ? "./public/verified_seller.svg":item.image}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
@@ -54,7 +55,7 @@ console.log(item);
               className="user-pic rounded-circle pr-1"
             />
           </Link>
-          {item.isVerified && (<span class="uppercase">top seller</span>) }
+          {item.isVerified && (<span className="uppercase">top seller</span>) }
           <button className="btn btn-outline-secondary" onClick={handleClick}>
             <i className="ion-heart"></i> {item.favoritesCount}
           </button>
